@@ -24,111 +24,111 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    return render_template('index3.html')
+    return render_template("index.html")
 
-@app.route('/1aan')
-def maak1high():
+@app.route('/1on')
+def channel1low():
     GPIO.output(2, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/1uit')
-def maak1low():
+@app.route('/1off')
+def channel1high():
     GPIO.output(2, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
-@app.route('/2aan')
-def maak2high():
+@app.route('/2on')
+def channel2low():
     GPIO.output(3, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/2uit')
-def maak2low():
+@app.route('/2off')
+def channel2high():
     GPIO.output(3, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
-@app.route('/3aan')
-def maak3high():
+@app.route('/3on')
+def channel3low():
     GPIO.output(4, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/3uit')
-def maak3low():
+@app.route('/3off')
+def channel3high():
     GPIO.output(4, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
-@app.route('/4aan')
-def maak4high():
+@app.route('/4on')
+def channel4low():
     GPIO.output(17, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/4uit')
-def maak4low():
+@app.route('/4off')
+def channel4high():
     GPIO.output(17, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
-@app.route('/5aan')
-def maak5high():
+@app.route('/5on')
+def channel5low():
     GPIO.output(27, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/5uit')
-def maak5low():
+@app.route('/5off')
+def channel5high():
     GPIO.output(27, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
-@app.route('/6aan')
-def maak6high():
+@app.route('/6on')
+def channel6low():
     GPIO.output(22, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/6uit')
-def maak6low():
+@app.route('/6off')
+def channel6high():
     GPIO.output(22, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
-@app.route('/7aan')
-def maak7high():
+@app.route('/7on')
+def channel7low():
     GPIO.output(10, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/7uit')
-def maak7low():
+@app.route('/7off')
+def channel7high():
     GPIO.output(10, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
-@app.route('/8aan')
-def maak8high():
+@app.route('/8on')
+def channel8low():
     GPIO.output(9, GPIO.LOW)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 
-@app.route('/8uit')
-def maak8low():
+@app.route('/8off')
+def channel8high():
     GPIO.output(9, GPIO.HIGH)
-    return render_template('index3.html')
-    return redirect("index3.html")
+    return render_template("index.html")
+    return redirect("index.html")
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
